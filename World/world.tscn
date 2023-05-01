@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://dg3ilc6o81j61"]
+
+[ext_resource type="PackedScene" uid="uid://vgytmx5byyoj" path="res://Paddle/paddle.tscn" id="1_3yim3"]
+[ext_resource type="PackedScene" uid="uid://bsuqevii45owp" path="res://Ball/ball.tscn" id="1_6areb"]
+[ext_resource type="Script" path="res://World/world.gd" id="1_6ueim"]
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_6ueim")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="StaticBody2D"]
+polygon = PackedVector2Array(0, 416, -64, 416, -64, -64, 704, -64, 704, 416, 640, 416, 640, 0, 0, 0)
+
+[node name="Ball" parent="." instance=ExtResource("1_6areb")]
+position = Vector2(224, 256)
+
+[node name="Paddle" parent="." instance=ExtResource("1_3yim3")]
+position = Vector2(288, 320)
+motion_mode = 1
+platform_on_leave = 2

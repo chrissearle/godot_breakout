@@ -1,0 +1,29 @@
+[gd_scene load_steps=6 format=3 uid="uid://bsuqevii45owp"]
+
+[ext_resource type="Texture2D" uid="uid://bvshblmxmdul2" path="res://Assets/ball.png" id="1_57jum"]
+[ext_resource type="Script" path="res://Ball/ball.gd" id="1_gdtt3"]
+[ext_resource type="AudioStream" uid="uid://cfaoprl3m4es2" path="res://Assets/blip.wav" id="3_g18fi"]
+[ext_resource type="AudioStream" uid="uid://cxlj26c45nras" path="res://Assets/hit.wav" id="4_3qh2w"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t2lxm"]
+size = Vector2(8, 8)
+
+[node name="Ball" type="RigidBody2D"]
+script = ExtResource("1_gdtt3")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(4, 4)
+texture = ExtResource("1_57jum")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_t2lxm")
+
+[node name="Blip" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_g18fi")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[node name="Hit" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_3qh2w")
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
