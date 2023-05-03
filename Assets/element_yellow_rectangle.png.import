@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c5vpj337msk0k"
-path="res://.godot/imported/brick.png-69001c7bde54f6f7c47800d7bb04a237.ctex"
+uid="uid://khb53nsdcdge"
+path="res://.godot/imported/element_yellow_rectangle.png-cae5a76ca2187323e3f1190d21910cdb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/brick.png"
-dest_files=["res://.godot/imported/brick.png-69001c7bde54f6f7c47800d7bb04a237.ctex"]
+source_file="res://Assets/element_yellow_rectangle.png"
+dest_files=["res://.godot/imported/element_yellow_rectangle.png-cae5a76ca2187323e3f1190d21910cdb.ctex"]
 
 [params]
 

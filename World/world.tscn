@@ -1,11 +1,23 @@
-[gd_scene load_steps=4 format=3 uid="uid://dg3ilc6o81j61"]
+[gd_scene load_steps=5 format=3 uid="uid://dg3ilc6o81j61"]
 
 [ext_resource type="PackedScene" uid="uid://vgytmx5byyoj" path="res://Paddle/paddle.tscn" id="1_3yim3"]
 [ext_resource type="PackedScene" uid="uid://bsuqevii45owp" path="res://Ball/ball.tscn" id="1_6areb"]
 [ext_resource type="Script" path="res://World/world.gd" id="1_6ueim"]
 
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_gwbq4"]
+load_path = "res://.godot/imported/ball.png-1953c7d658a9d52aab6b71a2f962f6ac.ctex"
+
 [node name="World" type="Node2D"]
 script = ExtResource("1_6ueim")
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.878431, 0.878431, 0.878431, 1)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.576471, 0.576471, 0.576471, 1)
+position = Vector2(335.75, 195.75)
+scale = Vector2(344.125, 222.125)
+texture = SubResource("CompressedTexture2D_gwbq4")
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 

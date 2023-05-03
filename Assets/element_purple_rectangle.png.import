@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dl5tonqjjruym"
-path="res://.godot/imported/paddle.png-99d056ecbc0d62804622166126ad48af.ctex"
+uid="uid://b5xo5c3ne1kpn"
+path="res://.godot/imported/element_purple_rectangle.png-7b27cccfd1f4d9eb1f1d266eff6dac85.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/paddle.png"
-dest_files=["res://.godot/imported/paddle.png-99d056ecbc0d62804622166126ad48af.ctex"]
+source_file="res://Assets/element_purple_rectangle.png"
+dest_files=["res://.godot/imported/element_purple_rectangle.png-7b27cccfd1f4d9eb1f1d266eff6dac85.ctex"]
 
 [params]
 

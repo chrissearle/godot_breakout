@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bvshblmxmdul2"
-path="res://.godot/imported/ball.png-1953c7d658a9d52aab6b71a2f962f6ac.ctex"
+uid="uid://c52yidyeeualt"
+path="res://.godot/imported/element_blue_rectangle.png-88d7a07ec361a22a106d94ee76b3726d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/ball.png"
-dest_files=["res://.godot/imported/ball.png-1953c7d658a9d52aab6b71a2f962f6ac.ctex"]
+source_file="res://Assets/element_blue_rectangle.png"
+dest_files=["res://.godot/imported/element_blue_rectangle.png-88d7a07ec361a22a106d94ee76b3726d.ctex"]
 
 [params]
 
